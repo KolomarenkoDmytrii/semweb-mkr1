@@ -1,0 +1,10 @@
+SELECT ?item ?itemLabel ?value ?website WHERE {
+  ?item wdt:P31 wd:Q1248784 ;
+        wdt:P17 wd:Q142 ;
+        wdt:P2044 ?value .
+  FILTER(?value > 200)
+  OPTIONAL { ?item wdt:P856 ?website . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+ORDER BY DESC(?value) ?item
+LIMIT 20
