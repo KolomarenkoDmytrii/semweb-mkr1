@@ -1,0 +1,20 @@
+flight_id,airline,from_city,from_country,to_city,to_country,dep_date,duration_min,price_eur,note
+FL-1546,Blue Meridian,Budapest,Hungary,Krakow,Poland,2026-03-12,317,189.50,delay=55;by=FlightLog
+FL-5001,AeroVista,Tallinn,Estonia,Vienna,Austria,2026-06-07,264,121.50,
+FL-1633,TransCarpa,Budapest,Hungary,Tallinn,Estonia,19.08.2026,112,82.99,
+FL-8126,Orbit Airways,Krakow,Poland,Oslo,Norway,02.09.2026,144,95.50,
+FL-2132,SkyNord,Milan,Italy,Vilnius,Lithuania,2026-09-18,102,251.50,
+FL-1035,Lumen Air,Milan,Italy,Kyiv,Ukraine,2026-04-05,296,153.99,delay=90;by=FlightLog
+FL-6237,Lumen Air,Prague,Czechia,Krakow,Poland,2026-06-18,274,161.00,
+FL-1520,Falcon Jet,Rome,Italy,Riga,Latvia,2026-08-06,267,215.00,delay=55;by=AirWatch
+ fl-6088 ,SkyNord ,WARSAW,Poland,Milan,Italy,2026-05-09,71,160.99,
+FL-6744,SkyNord,Munich,Germany,Budapest,Hungary,2026-07-23,218,220.99,delay=40;by=AirWatch
+FL-8071,Orbit Airways,Krakow,Poland,Lviv,Ukraine,27.05.2026,313,247.50,
+FL-3285,Orbit Airways,Lyon,France,Budapest,Hungary,2026-09-08,233,184.50,
+FL-6088,SkyNord,Warsaw,Poland,Milan,Italy,2026-05-09,71,160.99,
+FL-6140,Blue Meridian,Warsaw,Poland,Budapest,Hungary,2026-09-20,182,216.50,
+FL-1747,Lumen Air,Oslo,Norway,Lviv,Ukraine,25.08.2026,205,181.50,
+FL-4777,Lumen Air,Krakow,Poland,Paris,France,24.08.2026,77,,
+FL-8264,Blue Meridian,Vilnius,Lithuania,Berlin,Germany,07.05.2026,217,135.50,delay=25;by=FlightLog
+ fl-8071 ,Orbit Airways ,KRAKOW,Poland,Lviv,Ukraine,27.05.2026,313,247.50,
+FL-9042,Zephyr Lines,Vilnius,Lithuania,Paris,France,2026-07-08,169,73.00,
