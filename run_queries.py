@@ -15,6 +15,7 @@ THRESHOLD = 200
 
 
 def generate_queries(wikidata_class, country, wikidata_property, threshold):
+    """Generate queries for requests Q1, Q2, Q3"""
     q1 = f"""SELECT ?item ?itemLabel ?value ?website WHERE {{
   ?item wdt:P31 wd:{wikidata_class} ;
         wdt:P17 wd:{country} ;
@@ -51,6 +52,7 @@ LIMIT 10"""
 
 
 def execute_sparql(query):
+    """Execute generated query"""
     response = requests.get(ENDPOINT_URL, params={"query": query}, headers=HEADERS)
     response.raise_for_status()
     data = response.json()
@@ -64,6 +66,7 @@ def execute_sparql(query):
 
 
 def save_csv(filename, vars_list, rows):
+    """Save request results to CSV file"""
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=vars_list)
         writer.writeheader()
@@ -71,7 +74,7 @@ def save_csv(filename, vars_list, rows):
 
 
 def main():
-    # Генерація та виконання Q1
+    # Execution of Q1
     q1_str, q2_str, q3_str = generate_queries(
         WIKIDATA_CLASS, COUNTRY, WIKIDATA_PROPERTY, THRESHOLD
     )
